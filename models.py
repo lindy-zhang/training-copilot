@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
 from datetime import datetime
 
-Base = declarative_base
+Base = declarative_base()
 
 class Activity(Base):
     __tablename__ = "activities"
